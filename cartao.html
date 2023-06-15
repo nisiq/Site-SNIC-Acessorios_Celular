@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cartao.css">
+    
+    <title>Formulário</title>
+</head>
+<!-- Aba forms de compras - Dados e Endereço -->
+<body>
+    <script src="cartao.js"></script>
+<!-- Formulário -->
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Estamos quase lá!</h1>
+                        <h4>Agora as informações de pagamento...</h4>
+                    </div>
+        <!-- Input Nome no cartão -->
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nameCartao">Nome Completo do Cartão</label>
+                        <input id="nameCartao" type="text" name="nameCartao" required>
+                    </div>
+        
+        <!-- Input Nº do Cartão -->
+                    <div class="input-box">
+                        <label for="numberCartao">Nº do Cartão</label>
+                        <input id="numberCartao" type="numberCartao" name="numberCartao" required>
+                    </div>
+        <!-- Input Celular -->
+                    <div class="input-box">
+                        <label for="numberCV">CV</label>
+                        <input id="numberCV" type="tel" name="numberCV" placeholder="xxx" maxlength="3" required>
+                    </div>
+        <!-- Input CEP -->
+                    <div class="input-box">
+                        <label for="numberValidad">Data de Validade</label>
+                        <input id="numberValidad" type="date" name="numberValidad" placeholder="xxxxx-xxx" required>
+                    </div>
+        <!-- Button Continuar que leva para o Forms de Cartão -->
+                </div>
+                <div class="continue-button">
+                   <button id="btn-continuar">Finalizar</button></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<!-- Alerta de concluído / SweetAlert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    var btncontinuar = document.getElementById('btn-continuar');
+    btncontinuar.addEventListener('click', function(e) {
+        e.preventDefault();
+        Swal.fire(
+        'Concluído!',
+        'Suas informações serão analisadas. Aguarde a confirmação em seu email',
+        'success')
+
+    });
+    </script>
+
+</html>

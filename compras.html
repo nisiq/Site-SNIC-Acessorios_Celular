@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/compras.css">
+    <title>Formulário</title>
+</head>
+<!-- Aba forms de compras - Dados e Endereço -->
+<body>
+<!-- Formulário -->
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Olá Querido Cliente!</h1>
+                        <h4>Vamos dar continuidade a compra? Preencha Rapidinho!</h4>
+                    </div>
+        <!-- Input Primeiro Nome -->
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" required>
+                    </div>
+        <!-- Input Sobrenome -->
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" required>
+                    </div>
+        <!-- Input SEmail -->
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" required>
+                    </div>
+        <!-- Input Celular -->
+                    <div class="input-box">
+                        <label for="confirmCell">Celular</label>
+                        <input id="confirmCell" type="tel" name="confirmCell" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+        <!-- Input CEP -->
+                    <div class="input-box">
+                        <label for="confirmCEP">CEP</label>
+                        <input id="confirmCEP" type="text" name="confirmCEP" maxlength="8" required>
+                    </div>
+        <!-- Infos Endereço, se o CEP for digitado corretamente, essas serão preenchidas automaticamente -->
+                    <div class="input-box">
+                        <label for="rua">Rua</label>
+                        <input id="rua" type="text" name="rua" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="bairro">Bairro</label>
+                        <input id="bairro" type="text" name="bairro" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="cidade">Cidade</label>
+                        <input id="cidade" type="text" name="cidade" required>
+                    </div>
+        <!-- Input nº casa -->
+                    <div class="input-box">
+                        <label for="confirmNumber">Nº</label>
+                        <input id="confirmNumber" type="number" name="confirmNumber" required>
+                    </div>
+        <!-- Input complemento de endereço -->
+                    <div class="input-box">
+                        <label for="confirmComplemento">Complemento</label>
+                        <input id="confirmComplemento" type="text" name="confirmComplemento" required>
+                    </div>
+        <!-- Button Continuar que leva para o Forms de Cartão -->
+                </div>
+                <div class="continue-button">
+                    <button><a href="cartao.html">Continuar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Conexão com JS, consulta de CEP -->
+    <script src ="js/consulta.js"></script>
+</body>
+
+</html>
